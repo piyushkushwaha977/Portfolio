@@ -1,4 +1,5 @@
 import React from 'react'
+import { Links } from '../../data/links';
 import { FaXTwitter } from "react-icons/fa6";
 import { BsLinkedin } from "react-icons/bs";
 import { VscGithubInverted } from "react-icons/vsc";
@@ -11,10 +12,13 @@ const Footer = () => {
        flex justify-center items-center bg-[#020617] text-white">
          <div className=' flex-col gap-4'>
              <div className=' mb-4 my-5 w-fit mx-auto flex gap-7 text-gray-500  text-3xl cursor-pointer '> 
-              <FaXTwitter className='hover:text-gray-200' /> 
-              <BsLinkedin className='hover:text-gray-200'/>
-              <VscGithubInverted className='hover:text-gray-200'/>
-              <FaInstagram className='hover:text-gray-200'/>
+              <a href={Links.twitter}><FaXTwitter className='hover:text-gray-200' /> </a>
+              <a href={Links.linkedin}><BsLinkedin className='hover:text-gray-200'/></a>
+              <a href={Links.github}><VscGithubInverted className='hover:text-gray-200'/></a>
+              <a href={Links.instagram}><FaInstagram className='hover:text-gray-200'/></a>
+              
+              
+              
              </div>
              <div className=' text-lg text-gray-300 pb-6 md:pb-5'>© Copyright  2024 
              <span className=' font-bold text-lg text-white pl-4'>Piyush Kushwaha</span>

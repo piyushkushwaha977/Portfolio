@@ -16,7 +16,7 @@ function ContactPage() {
   return (  
   <> 
     
-    <div className="min-h-screen bg-gray-100 dark:bg-neutral-950 py-12 pt-36 relative overflow-hidden">
+    <div className="min-h-screen bg-gray-100 dark:bg-neutral-950 py-12 md:pt-36 relative overflow-hidden">
       {' '}  
       {/* Ensure the container is relative */}
       {/* BackgroundBeams with adjusted z-index */}
@@ -27,15 +27,13 @@ function ContactPage() {
       <div className="max-w-2xl mx-auto p-4 relative z-10">
         {' '}
 
-       <div className=" text-white flex  w-fit rounded-sm py-2 ">
-       <Link to="/" 
-         className=" text-lg md:text-3xl flex gap-2  ">
-          <FaArrowLeft className=" inline md:text-2xl text-white mt-2"/>
-            <div className="  text-gray-300 border-b-2 border-red-600">
-              Back</div>
-            
-        </Link>
-       </div>
+             <div className=" flex  w-fit rounded-sm py-2 mb-6  ">
+               <Link to="/"   className=" text-xl font-bold md:text-3xl flex items-center justify-center ml-3 md:36  gap-2  ">
+                  <FaArrowLeft className=" inline md:text-2xl text-white md:mt-2"/>
+                  <div className="  text-gray-100 border-b-2 border-red-600">
+                    Back</div>
+               </Link>
+              </div>
 
         {/* Add relative and z-10 to bring content to the front */}
         <h1 className="text-4xl md:text-5xl text-center font-sans font-bold mb-8 text-white">

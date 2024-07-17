@@ -7,7 +7,6 @@ import { VscVscodeInsiders } from "react-icons/vsc";
 import { GrTechnology } from "react-icons/gr";
 import studynotion from "../assets/projectImages/studynotion.png"
 import foodfusion from "../assets/projectImages/foodfusion.png"
-import realImage from "../assets/projectImages/realImage.webp"
 import myStudyNotionImg from "../assets/projectImages/MyStudyNotion.png"
 import { FaXTwitter } from "react-icons/fa6";
 import { BsLinkedin } from "react-icons/bs";
@@ -15,7 +14,7 @@ import { VscGithubInverted } from "react-icons/vsc";
 import { FaInstagram } from "react-icons/fa";
 import { FaArrowCircleDown } from "react-icons/fa";
 import { Spotlight } from '../components/ui/Spotlight';
-
+import { Links } from '../data/links';
 
 const description = "Our team works with our clients to refine an idea and concept into an executable design. We create a final design that encompasses the brand narrative to bring stories to life and provide end-to-end design solutions from concept, design, and architectural drawings to 3D renderings."
 
@@ -28,7 +27,7 @@ const HomePage = () => {
  
             {/* SPOTLIGHT EFFECT */}
             <Spotlight
-              className="  left-0 md:left-60 md:-top-20 "
+              className=" top-10 left-0 md:left-60 md:-top-20 "
               fill="blue"
               />
              {/* NAVBAR */}
@@ -38,7 +37,7 @@ const HomePage = () => {
             <div className='hidden lg:block absolute md:h-[500px] md:w-[500px] bg-slate-300 rounded-lg blur-[150px] bottom-0 left-0 '></div>
              {/* MAIN SECTION */}
             <div className=' w-full mx-auto'>
-                <h1 className='mt-24 md:mt-36 mb-6 md:mb-8 text-5xl md:text-7xl font-semibold text-center bg-gradient-to-b from-black to-purple-950 text-transparent bg-clip-text'
+                <h1 className='mt-36 mb-6 md:mb-8 text-5xl md:text-7xl font-semibold text-center bg-gradient-to-b from-black to-purple-950 text-transparent bg-clip-text'
                   >HI!, IM PIYUSH  
                 </h1>
                 <p className=' font-poppins text-center text-gray-800 md:text-2xl md:w-[50rem] sm:px-3 mx-auto'>
@@ -48,22 +47,22 @@ const HomePage = () => {
                 </p> 
 
                 <div className='mt-10  mb-4 md:my-8 w-fit mx-auto flex gap-1 md:gap-7 text-black text-3xl border-b pb-2 border-teal-950 '> 
-                  <a  href='https://www.youtube.com/'
+                  <a  href={Links.twitter}
                   className=' border-r-2 p-2 md:pr-4 border-teal-950'
                   ><FaXTwitter className=' hover:text-gray-900 ' />
                   </a> 
 
-                  <a  href='https://www.youtube.com/'
+                  <a  href={Links.linkedin}
                   className=' border-r-2 p-2 md:pr-4 border-teal-950'
                   ><BsLinkedin className='hover:text-gray-900  '/>
                   </a> 
 
-                  <a  href='https://www.youtube.com/'
+                  <a  href={Links.github}
                   className=' border-r-2 p-2 md:pr-4 border-teal-950'
                   ><VscGithubInverted className='hover:text-gray-900'/>
                   </a> 
 
-                  <a  href='https://www.youtube.com/'
+                  <a  href={Links.instagram}
                   className=' p-2 '
                   ><FaInstagram className='hover:text-gray-900'/>
                   </a> 
@@ -72,11 +71,11 @@ const HomePage = () => {
 
           {/* Button for project */}
         <a href="#projects" className=" w-fit mx-auto flex items-center  gap-3 cursor-pointer text-white font-semibold bg-gradient-to-r from-gray-800
-         to-black px-4 py-2 rounded-full border border-gray-600 hover:scale-105 duration-200 hover:text-orange-300 hover:border-gray-800 hover:from-black hover:to-gray-900">
+         to-black px-4 py-2 rounded-full border border-gray-600 hover:scale-105 duration-200 hover:text-orange-300 ">
           See my Projects 
           <FaArrowCircleDown className=' text-xl'/>
         </a>
-          <FaArrowCircleDown className=' mt-24 mb-32  md:mt-20 lg:mt-40 text-3xl w-fit mx-auto'/>
+          <FaArrowCircleDown className=' mt-24 mb-28  md:mt-20 lg:mt-40 text-3xl w-fit mx-auto'/>
 
             </div>
 
@@ -108,7 +107,7 @@ const HomePage = () => {
                             <h2 className=' font-semibold text-xl md:text-3xl border-b-2 border-purple-700'>  FRONT-END</h2>
                            </div>
                             <div className=' ml-6 md:ml-20 py-2 md:py-4 lg:py-6  font-poppins text-md md:text-[22px] lg:text-[27px] border-b border-black '>
-                                Javscript, React, Redux, Tailwind, Typescript, Nextjs, HTML/CSS, Redux
+                                Javascript, React, Redux, Tailwind, Typescript, Nextjs, HTML/CSS, Redux
                             </div>
                             {/*  We can Add more skills in future
                             <div className=' ml-6 md:ml-20  md:py-6 font-poppins text-md md:text-[22px] lg:text-[27px] border-b border-black'>

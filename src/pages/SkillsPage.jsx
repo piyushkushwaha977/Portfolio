@@ -12,14 +12,12 @@ const SkillsPage = () => {
             {/* SKILLS SECTION */}
             <div className=' w-full mx-auto mt-20 md:mt-[10rem] h-[35rem] md:h-[50rem] '>
               <div className=" text-white flex  w-fit rounded-sm py-2 ">
-               <Link to="/" 
-                  className=" text-lg md:text-3xl flex ml-3 md:36 lg:ml-48 md:gap-2  ">
-                <FaArrowLeft className=" inline md:text-2xl text-black mt-2"/>
-              <div className="  text-gray-900 border-b-2 border-red-600">
-                Back</div>
-            
-        </Link>
-       </div>
+               <Link to="/"   className=" text-xl font-bold md:text-3xl flex items-center justify-center ml-3 md:36 lg:ml-48 gap-2  ">
+                  <FaArrowLeft className=" inline md:text-2xl text-black md:mt-2"/>
+                  <div className="  text-gray-900 border-b-2 border-red-600">
+                    Back</div>
+               </Link>
+              </div>
             
                   <div className=' w-full md:max-w-5xl mx-auto'>
                      <h2 className=' mb-20 font-bold text-3xl md:text-5xl text-center text-gray-900'> MY SKILLS</h2>
@@ -32,7 +30,7 @@ const SkillsPage = () => {
                             <h2 className=' font-semibold text-xl md:text-3xl border-b-2 border-purple-700'>  FRONT-END</h2>
                            </div>
                             <div className=' ml-6 md:ml-20 py-2 md:py-4 lg:py-6  font-poppins text-md md:text-[22px] lg:text-[27px] border-b border-black '>
-                                Javscript, React, Redux, Tailwind, Typescript, Nextjs, HTML/CSS, Redux
+                                Javascript, React, Redux, Tailwind, Typescript, Nextjs, HTML/CSS, Redux
                             </div>
                             {/*  We can Add more skills in future
                             <div className=' ml-6 md:ml-20  md:py-6 font-poppins text-md md:text-[22px] lg:text-[27px] border-b border-black'>

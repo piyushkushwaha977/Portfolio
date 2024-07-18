@@ -70,7 +70,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-
-{/* <h1 className="footer text-sm lg:text-[20px] ">
-© 2024 MADE BY <span className="text-orange-500">
-🙋‍♂️ PIYUSH KUSHWAHA WITH❣️</span> </h1> */}

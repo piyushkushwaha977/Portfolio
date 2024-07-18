@@ -38,13 +38,17 @@ const HomePage = () => {
               className=" top-10 left-0 md:left-60 md:-top-20 "
               fill="blue"
               />
-             {/* NAVBAR */}
-               <Navbar/>
              {/* SOME BG GRADIENTS TWEAK */}
-            {/* <div className=' hidden lg:block absolute h-20 w-28  md:h-[500px] md:w-[500px] bg-purple-200 rounded-full blur-3xl md:blur-[150px] md:top-4 md:right-3 '></div>
-            <div className='hidden lg:block absolute md:h-[500px] md:w-[500px] bg-slate-300 rounded-lg blur-[150px] bottom-0 left-0 '></div> */}
+            <div className=' hidden lg:block absolute h-20 w-28  md:h-[500px] md:w-[500px] bg-purple-200 rounded-full blur-3xl md:blur-[150px] md:top-4 md:right-3 '></div>
+            <div className='hidden lg:block absolute md:h-[500px] md:w-[500px] bg-slate-300 rounded-lg blur-[150px] bottom-0 left-0 '></div> 
              {/* MAIN SECTION */}
-            <div className=' w-full mx-auto'>
+            <motion.div
+            initial={{opacity: 0 , y: -100}}
+            animate={{opacity:1 , y: 0}}
+            transition={{duration: 0}}
+             className=' w-full mx-auto'>
+                 {/* NAVBAR */}
+                    <Navbar/>
                 <p className='mt-32 mb-6 md:mb-8 text-5xl md:text-7xl font-semibold text-center bg-gradient-to-b from-black to-purple-950 text-transparent bg-clip-text'
                   > { HelloMessage.split('').map( (char,index) => (
                     <motion.span
@@ -111,7 +115,7 @@ const HomePage = () => {
           >
           <FaArrowCircleDown className=' mt-24 mb-28  md:mt-20 lg:mt-40 text-3xl w-fit mx-auto'/>
           </motion.div>
-            </div>
+            </motion.div>
 
 
               {/* PROJECT SECTION */}

@@ -45,7 +45,7 @@ const HomePage = () => {
             <div className='hidden lg:block absolute md:h-[500px] md:w-[500px] bg-slate-300 rounded-lg blur-[150px] bottom-0 left-0 '></div> */}
              {/* MAIN SECTION */}
             <div className=' w-full mx-auto'>
-                <p className='mt-36 mb-6 md:mb-8 text-5xl md:text-7xl font-semibold text-center bg-gradient-to-b from-black to-purple-950 text-transparent bg-clip-text'
+                <p className='mt-32 mb-6 md:mb-8 text-5xl md:text-7xl font-semibold text-center bg-gradient-to-b from-black to-purple-950 text-transparent bg-clip-text'
                   > { HelloMessage.split('').map( (char,index) => (
                     <motion.span
                     key={index}

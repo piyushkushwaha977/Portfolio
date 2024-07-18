@@ -18,11 +18,11 @@ const ProjectsPage = () => {
                         {/* SKILLS SECTION */}
             <div className=' w-full mx-auto mb-36  '>
                   <div className=' w-full md:max-w-4xl lg:max-w-5xl mx-auto'>
-                     <h2 className=' mb-16 mt-4  w-fit mx-auto font-bold text-3xl md:text-4xl text-center bg-gradient-to-b from-slate-300 to-purple-500 text-transparent bg-clip-text border-b-2  '
+                     <h2 className=' mb-16 mt-4  w-fit mx-auto font-bold text-3xl md:text-4xl text-center bg-gradient-to-b from-slate-100 to-gray-500 text-transparent bg-clip-text border-b-2  '
                      > MY PROJECTS</h2>
                     {/* SKILLS CATEGORIES */}
                       <div className=' flex flex-col gap-12  md:max-w-2xl mx-2 md:mx-auto'>
-                       {/* FRONTEND SKILLS */}
+                       {/* FULL STACK PROJECTS */}
                        <div className=' flex flex-col '>
                            <div className='w-fit flex gap-1 md:gap-2 items-center justify-center'>
                             <h2 className=' md:pb-3 font-semibold text-lg text-gray-300 md:text-2xl border-b-2 border-slate-700'
@@ -42,21 +42,21 @@ const ProjectsPage = () => {
                             </div>
                         </div>
 
-                          {/* BACKEND SKILLS */}
+                          {/* FRONTEND PROJECTS */}
                           <div className=' flex flex-col '>
                            <div className='w-fit flex gap-1 md:gap-2 items-center justify-center'>
                             <h2 className=' md:pb-3 font-semibold text-lg text-gray-300 md:text-2xl border-b-2 border-slate-700
                             '> REACT/NEXT.JS | FRONTEND-PROJECTS</h2>
                            </div>
                             <div className=' mx-1 md:mx-4 '>
-                              <Link to={"/project/studynotion"}>
+                              <Link to={"/project/foodfusion"}>
                                <div className=' ml-2 md:ml-10 py-4 md:py-4  text-gray-400 hover:text-white font-poppins md:text-2xl   border-b '>
-                                StudyNotion an Edtech Platform (LMS)  <GoArrowRight className='inline ml-2 md:ml-6 left-0 '/>
+                                FoodFusion a food app <GoArrowRight className='inline ml-2 md:ml-6 left-0 '/>
                                </div>
                               </Link>
-                              <Link to={"/project/truefeedback"}>
+                              <Link to={"/project/studynotion"}>
                                <div className=' ml-2 md:ml-10 py-4 md:py-3  text-gray-400 hover:text-white font-poppins md:text-2xl border-b '>
-                                TrueFeedback text Messaging app  <GoArrowRight className='inline ml-2 md:ml-6 left-0 '/>
+                                WebTube | Kink of youtube   <GoArrowRight className='inline ml-2 md:ml-6 left-0 '/>
                                </div>
                               </Link>
                             </div>
@@ -66,19 +66,25 @@ const ProjectsPage = () => {
                          <div className=' flex flex-col '>
                            <div className='w-fit flex gap-1 md:gap-2 items-center justify-center'>
                             <h2 className=' md:pb-3 font-semibold text-lg text-gray-300 md:text-2xl border-b-2 border-slate-700
-                            '>  MERN  | FULL STACK PROJECTS</h2>
+                            '> REACT & TAILWIND  UI | PROJECTS</h2>
                            </div>
                             <div className=' mx-1 md:mx-4 '>
-                              <Link to={"/project/studynotion"}>
+                              <a href='https://brainwave-ui-three.vercel.app/'>
                                <div className=' ml-2 md:ml-10 py-4 md:py-4  text-gray-400 hover:text-white font-poppins md:text-2xl   border-b '>
-                                StudyNotion an Edtech Platform (LMS)  <GoArrowRight className='inline ml-2 md:ml-6 left-0 '/>
+                                Brainwave A.I  Landing Page <GoArrowRight className='inline ml-2 md:ml-6 left-0 '/>
                                </div>
-                              </Link>
-                              <Link to={"/project/truefeedback"}>
+                              </a>
+                              <a href='https://next-music-eight.vercel.app/'>
                                <div className=' ml-2 md:ml-10 py-4 md:py-3  text-gray-400 hover:text-white font-poppins md:text-2xl border-b '>
-                                TrueFeedback text Messaging app  <GoArrowRight className='inline ml-2 md:ml-6 left-0 '/>
+                                Music App with Aceternity UI   <GoArrowRight className='inline ml-2 md:ml-6 left-0 '/>
                                </div>
-                              </Link>
+                              </a>
+                              <a href='https://dark-theme-portfolio-xi.vercel.app/'>
+                               <div className=' ml-2 md:ml-10 py-4 md:py-3  text-gray-400 hover:text-white font-poppins md:text-2xl border-b '>
+                                Dark Theme Portolio UI  <GoArrowRight className='inline ml-2 md:ml-6 left-0 '/>
+                               </div>
+                              </a>
+                              
                             </div>
                         </div>
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import ProjectHero from '../components/custom/ProjectHero'
+import ProjectHero from '../../components/custom/ProjectHero'
 
 const StudyNotionPage = () => {
   return (

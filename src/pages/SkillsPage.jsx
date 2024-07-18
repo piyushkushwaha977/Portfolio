@@ -8,9 +8,9 @@ import Footer from "../components/custom/Footer";
 
 const SkillsPage = () => {
   return (
-    <>
+    <div className=" h-full w-full">
             {/* SKILLS SECTION */}
-            <div className=' w-full mx-auto mt-20 md:mt-[10rem] h-[35rem] md:h-[50rem] '>
+            <div className=' w-full mx-auto mt-20 md:mt-[10rem] h-full  '>
               <div className=" text-white flex  w-fit rounded-sm py-2 ">
                <Link to="/"   className=" text-xl font-bold md:text-3xl flex items-center justify-center ml-3 md:36 lg:ml-48 gap-2  ">
                   <FaArrowLeft className=" inline md:text-2xl text-black md:mt-2"/>
@@ -70,8 +70,10 @@ const SkillsPage = () => {
 
               </div>
 
-              <Footer/>
-    </>
+              <div>
+               <Footer/>
+              </div>
+    </div>
   )
 }
 

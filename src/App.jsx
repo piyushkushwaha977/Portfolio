@@ -1,9 +1,9 @@
 import HomePage from "./pages/HomePage";
-import StudyNotionPage from "./pages/StudyNotionPage";
+import StudyNotionPage from "../src/pages/projectPages/StudyNotionPage";
 import ContactPage from "./pages/ContactPage"
 import { Route,Routes } from "react-router-dom";
 import SkillsPage from "./pages/SkillsPage";
-import FoodFusionPage from "./pages/FoodFusionPage";
+import FoodFusionPage from "../src/pages/projectPages/FoodFusionPage";
 import ProjectsPage from "./pages/ProjectsPage";
 // import Navbar from "./components/custom/Navbar";
 

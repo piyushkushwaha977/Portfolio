@@ -74,7 +74,7 @@ const HomePage = () => {
                  initial={{opacity: 0 , x: -100}}
                  animate={{opacity:1 , x: 0}}
                  transition={{duration: 0.8}}
-                 className='mt-10  mb-4 md:my-8 w-fit mx-auto flex gap-1 md:gap-7 text-black text-3xl border-b pb-2 border-teal-950 '> 
+                 className='mt-10  mb-4 md:my-8 w-fit mx-auto flex gap-1 md:gap-4 text-black text-3xl border-b pb-2 border-teal-950 '> 
                   <a  href={Links.twitter}
                   className=' border-r-2 p-2 md:pr-4 border-teal-950'
                   ><FaXTwitter className=' hover:text-gray-900 ' />

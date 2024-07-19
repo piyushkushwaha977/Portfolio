@@ -74,7 +74,7 @@ function ContactPage() {
   return (  
   <> 
     
-    <div className="min-h-screen bg-neutral-950 py-12 md:pt-36 relative overflow-hidden">
+    <div className="min-h-screen bg-neutral-950 py-4 md:pt-36 relative overflow-hidden">
       <Toaster/>
       {' '}  
       {/* Ensure the container is relative */}

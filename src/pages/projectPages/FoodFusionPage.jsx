@@ -5,14 +5,14 @@ import { motion } from 'framer-motion'
 const FoodFusionPage = () => {
   return (
     
-<div className=' w-full h-full -z-10 '>
+   <div className=' w-full max-w-7xl mx-auto h-full -z-10 bg-black '>
 
          <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 // exit={{ x: 0 }}
                 transition={{ ease: "easeInOut", duration: 0.5 }}
-                className="card group mb-6 flex flex-col w-full md:w-[80%] rounded-lg border border-white/20 bg-[radial-gradient(_rgba(255,255,255,0.2)_1px,transparent_1px_)]  bg-[length:1.1rem_1.1rem] bg-[50%_50%] "
+                className="card group  mb-6 flex flex-col w-full md:w-[100%] rounded-lg border border-white/20 bg-[radial-gradient(_rgba(255,255,255,0.2)_1px,transparent_1px_)]  bg-[length:1.1rem_1.1rem] bg-[50%_50%] "
               >
                 <img
                   className="img w-full rounded-lg rounded-b-none   bg-white"

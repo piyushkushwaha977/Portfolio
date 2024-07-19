@@ -16,6 +16,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaArrowCircleDown } from "react-icons/fa";
 import { Spotlight } from '../components/ui/Spotlight';
 import { Links } from '../data/links';
+import { Link } from 'react-router-dom';
 
 const description = "Our team works with our clients to refine an idea and concept into an executable design. We create a final design that encompasses the brand narrative to bring stories to life and provide end-to-end design solutions from concept, design, and architectural drawings to 3D renderings."
 
@@ -24,32 +25,39 @@ const HomePage = () => {
     const HelloMessage = "HI!, IM PIYUSH"
    
   return (
-    <div className=''>
+    <div className='relative w-full h-full'>
+     
+
         <div className="fixed left-0 top-0 -z-10 w-full h-full">
           <div className=' relative h-full w-full bg-white'>
             <div className="absolute bottom-0 left-0 right-0 top-0  bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
           </div>
         </div> 
           
-          <div className=' relative h-screen w-full '>
- 
-            {/* SPOTLIGHT EFFECT */}
-            <Spotlight
-              className=" top-10 left-0 md:left-60 md:-top-20 "
-              fill="blue"
-              />
-             {/* SOME BG GRADIENTS TWEAK */}
-            <div className=' hidden lg:block absolute h-20 w-28  md:h-[500px] md:w-[500px] bg-purple-200 rounded-full blur-3xl md:blur-[150px] md:top-4 md:right-3 '></div>
-            <div className='hidden lg:block absolute md:h-[500px] md:w-[500px] bg-slate-300 rounded-lg blur-[150px] bottom-0 left-0 '></div> 
+          <div className=' relative w-full h-full'>
+
+               {/* NAVBAR */}
+               <motion.div 
+                      initial={{opacity: 0 , x: -100}}
+                      animate={{opacity:1 , x: 0}}
+                      transition={{duration: 0.8}}
+                      className=''>
+
+                          <Navbar/>
+                    </motion.div>
+
+           
              {/* MAIN SECTION */}
-            <motion.div
-            initial={{opacity: 0 , y: -100}}
-            animate={{opacity:1 , y: 0}}
-            transition={{duration: 0}}
-             className=' w-full mx-auto'>
-                 {/* NAVBAR */}
-                    <Navbar/>
-                <p className='mt-32 mb-6 md:mb-8 text-5xl md:text-7xl font-semibold text-center bg-gradient-to-b from-black to-purple-950 text-transparent bg-clip-text'
+            <div className=' relative w-full h-[40rem] mx-auto'>
+            <Spotlight
+              className="-top-40 left-0 md:left-40 md:-top-80"
+              fill="blue"
+            />
+                         {/* SOME BG GRADIENTS TWEAK */}
+           <div className=' hidden cursor-none lg:block absolute  md:h-[500px] md:w-[500px] bg-purple-200 rounded-full blur-3xl md:blur-[150px] md:top-4 md:right-3 '></div>
+            <div className='hidden cursor-none lg:block absolute md:mt-36 md:h-[500px] md:w-[500px] bg-slate-300 rounded-lg blur-[150px]  left-0 '></div> 
+              
+                <p className='mt-28 mb-6 md:mb-8 text-5xl md:text-7xl font-semibold text-center bg-gradient-to-b from-black to-purple-950 text-transparent bg-clip-text'
                   > { HelloMessage.split('').map( (char,index) => (
                     <motion.span
                     key={index}
@@ -98,39 +106,43 @@ const HomePage = () => {
                 </motion.div>
 
           {/* Button for project */}
-            <motion.a
+            <motion.div
              initial={{opacity: 0 , x: -50}}
              animate={{opacity:1 , x: 0}}
              transition={{duration: 1}}
-               href="#projects" className=" w-fit mx-auto flex items-center  gap-3 cursor-pointer text-white font-semibold bg-gradient-to-r from-gray-800
-              to-black px-4 py-2 rounded-full border border-gray-600 hover:scale-105 duration-200 hover:text-orange-300 ">
-                 See my Projects 
+             className=" w-fit mx-auto flex items-center  gap-3 cursor-pointer text-white font-semibold bg-gradient-to-r from-gray-800
+              to-black px-4 py-2 rounded-full border border-gray-600 hover:scale-105 duration-200 hover:text-orange-300 "
+             >
+              <Link to={"/projects"} >
+                See my Projects</Link>
                  <FaArrowCircleDown className=' text-xl'/>
-            </motion.a>
+            </motion.div>
           
           <motion.div 
            initial={{ y: 50}}
            animate={{ y: 0  }}
            transition={{duration: 3, repeat:Infinity}}
           >
-          <FaArrowCircleDown className=' mt-24 mb-28  md:mt-20 lg:mt-40 text-3xl w-fit mx-auto'/>
+          <FaArrowCircleDown className=' mt-24 mb-8  md:mt-20 lg:mt-40 text-3xl w-fit mx-auto'/>
           </motion.div>
-            </motion.div>
+            </div>
 
 
               {/* PROJECT SECTION */}
-          <section id='projects'>
             <div  className=' w-full md:mt-[12rem] overflow-x-hidden'>
 
-              <h2 className=' mx-2 text-center text-xl md:text-3xl lg:text-5xl border-b border-blue-900 max-w-7xl lg:mx-auto py-4 mb-12 shadow-sm shadow-gray-400 rounded-md
+              <motion.h2
+               initial={{opacity: 0 , y: -50}}
+               whileInView={{opacity:1 , y: 0}}
+               transition={{duration: 2}}               
+               className=' mx-2 text-center text-xl md:text-3xl lg:text-5xl border-b border-blue-900 max-w-7xl lg:mx-auto py-4 mb-12 shadow-sm shadow-gray-400 rounded-md
                bg-gradient-to-r from-[#020617] to-purple-800 text-transparent bg-clip-text'
-              >MY WORK | SOME FEATURED PROJECTS</h2>
+              >MY WORK | SOME FEATURED PROJECTS</motion.h2>
 
-                <ProjectSection name={"StudyNotion"} description={description} image={myStudyNotionImg} />
-                <ProjectSection name={"FoodFusion"} description={description} image={foodfusion} />
-                <ProjectSection name={"TrueFeedback"} description={description} image={studynotion} />
+                <Link to={"project/studynotion"}><ProjectSection name={"StudyNotion"} description={description} image={myStudyNotionImg} /></Link>
+                <Link to={"project/foodfusion"}><ProjectSection name={"FoodFusion"} description={description} image={foodfusion} /></Link>
+                <Link to={"project/studynotion"}><ProjectSection name={"TrueFeedback"} description={description} image={studynotion} /></Link>
             </div>
-          </section>
 
                 {/* SKILLS SECTION */}
             <div className=' w-full mx-auto mt-20 md:mt-[10rem] h-[35rem] md:h-[50rem] '>
@@ -139,7 +151,11 @@ const HomePage = () => {
                     {/* SKILLS CATEGORIES */}
                       <div className=' flex flex-col gap-12 md:gap-16 mx-2'>
                        {/* FRONTEND SKILLS */}
-                       <div className=' flex flex-col  '>
+                       <motion.div
+                         whileInView={{opacity: 1 , x:0}}
+                         initial={{opacity:0 , x:100}}
+                         transition={{duration: 1}}
+                        className=' flex flex-col  '>
                            <div className='w-fit flex gap-1 md:gap-2 items-center justify-center'>
                            <TbBrandReact className=' font-bold text-2xl md:text-4xl'/>
                             <h2 className=' font-semibold text-xl md:text-3xl border-b-2 border-purple-700'>  FRONT-END</h2>
@@ -152,10 +168,14 @@ const HomePage = () => {
                                 Javscript, React, Redux, Tailwind, Typescript, Nextjs, HTML/CSS, Redux
                             </div> */}
                           
-                         </div>
+                         </motion.div>
 
                           {/* BACKEND SKILLS */}
-                          <div className=' flex flex-col '>
+                        <motion.div
+                         whileInView={{opacity: 1 , x: 0}}
+                         initial={{opacity: 0 , x: 100}}
+                         transition={{duration: 1 }}
+                           className=' flex flex-col '>
                            <div className='w-fit flex gap-1 md:gap-2 items-center justify-center'>
                              <FaCode className='font-bold text-2xl md:text-4xl'/>
                             <h2 className=' font-semibold text-xl md:text-3xl border-b-2 border-orange-700'> 
@@ -165,10 +185,14 @@ const HomePage = () => {
                                 Node, Express, MongoDB, Postman, RESTful APIs, Firebase
                             </div>
                           
-                         </div>
+                         </motion.div>
 
                          {/* Tools and Platforms TECH */}
-                         <div className=' flex flex-col '>
+                         <motion.div
+                         whileInView={{opacity: 1 , x: 0}}
+                         initial={{opacity: 0 , x: 100}}
+                         transition={{duration: 1}}
+                          className=' flex flex-col '>
                            <div className='w-fit flex gap-1 md:gap-2 items-center justify-center'>
                            <GrTechnology className=' font-bold text-2xl md:text-4xl'/>
                             <h2 className=' font-semibold text-xl md:text-3xl border-b-2 border-green-700 uppercase'> 
@@ -178,7 +202,7 @@ const HomePage = () => {
                                  Git, Github, Postman, VsCode, Developer-tools, Vite, NPM ... 
                             </div>
                           
-                         </div>
+                         </motion.div>
                           
                       </div>
                   </div>

@@ -1,15 +1,10 @@
 import React from 'react'
 import { NAVITEMS } from '../../data/navLinks'
 import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
 
 const Navbar = () => {
   return (
-    <motion.div
-     initial={{opacity: 0 , x: -100}}
-     animate={{opacity:1 , x: 0}}
-     transition={{duration: 0.8}}
-     className=' max-w-7xl mx-auto w-full '>
+    <div className='max-w-7xl mx-auto w-full mt-4 '>
        <ul className=' flex gap-1 md:gap-2 py-4  items-center justify-center '>
           {
             NAVITEMS.map( (item,index) => (
@@ -29,7 +24,7 @@ const Navbar = () => {
             ))
           }
        </ul>
-    </motion.div>
+    </div>
   )
 }
 

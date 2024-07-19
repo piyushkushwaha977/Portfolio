@@ -7,7 +7,6 @@ import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-  <footer id="contact">  
     <div className="footer bottom-0 mt-24 text-center text-sm font-medium font-poppins h-[120px]
        flex justify-center items-center bg-[#020617] text-white">
          <div className=' flex-col gap-4'>
@@ -27,7 +26,6 @@ const Footer = () => {
            
       </div>
 
-  </footer>    
   )
 }
 

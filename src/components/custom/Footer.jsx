@@ -8,13 +8,13 @@ import { FaInstagram } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="footer bottom-0 mt-24 text-center text-sm font-medium font-poppins h-[120px]
-       flex justify-center items-center bg-[#020617] text-white">
+       flex justify-center items-center bg-[#09090a] text-white">
          <div className=' flex-col gap-4'>
              <div className=' mb-4 my-5 w-fit mx-auto flex gap-7 text-gray-500  text-3xl cursor-pointer '> 
               <a href={Links.twitter}><FaXTwitter className='hover:text-gray-200' /> </a>
-              <a href={Links.linkedin}><BsLinkedin className='hover:text-gray-200'/></a>
+              <a href={Links.linkedin}><BsLinkedin className='hover:text-blue-600'/></a>
               <a href={Links.github}><VscGithubInverted className='hover:text-gray-200'/></a>
-              <a href={Links.instagram}><FaInstagram className='hover:text-gray-200'/></a>
+              <a href={Links.instagram}><FaInstagram className='hover:text-pink-500'/></a>
               
               
               

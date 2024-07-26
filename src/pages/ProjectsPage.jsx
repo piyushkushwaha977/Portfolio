@@ -39,11 +39,13 @@ const ProjectsPage = () => {
                                 StudyNotion an Edtech Platform (LMS)  <GoArrowRight className='inline ml-2 md:ml-6 left-0 '/>
                                </div>
                               </Link>
-                              <Link to={"/project/foodfusion"}>
+                              <a href='https://truefeedback.in/ '>
+                              {/* <Link to={"/project/foodfusion"}> */}
                                <div className=' ml-2 md:ml-10 py-4 md:py-3  text-gray-400 hover:text-white font-poppins md:text-2xl border-b '>
                                 TrueFeedback text Messaging app  <GoArrowRight className='inline ml-2 md:ml-6 left-0 '/>
                                </div>
-                              </Link>
+                              {/* </Link> */}
+                              </a>
                             </div>
                         </div>
 

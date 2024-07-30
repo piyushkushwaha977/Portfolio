@@ -59,16 +59,16 @@ const ProjectHero = () => {
                 border-b border-slate-700"
                >Study Notion</h2>
            
-        <div className=" max-w-full mx-2 mt-6 flex flex-col-reverse">
+        <div className=" max-w-full mx-2 mt-6 flex flex-col-reverse  " >
 
                 {/* LEFT SECTION */}
-            <div className="w-full">
-                 <h3 className=" text-xl mt-8 md:text-3xl text-gray-300 font-poppins ">Functionality & Features</h3>
-                    <ul className=" max-w-full md:w-11/12 mt-3 mx-auto text-white">
+            <div className="w-full pb-10 border-b border-gray-700">
+                 <h3 className=" text-xl pb-2 md:pl-8 md:pr-8 mt-8  md:text-3xl text-gray-300 font-poppins border-b border-gray-700 w-fit ">Functionality & Features</h3>
+                    <ul className=" max-w-full pt-2 md:pl-12 md:w-11/12 mt-3 mx-auto text-white">
                     {
                       TechFeatures.map((text,index) => (
                         <li key={index}
-                        className=" text-gray-400  md:text-lg "
+                        className=" text-gray-400 font-poppins  md:text-lg "
                         >
                          {text}
                         </li>
@@ -79,16 +79,16 @@ const ProjectHero = () => {
             </div>
 
                 {/* RIGHT SECTION */}
-                <div className="w-full  ">
+                <div className="w-full border-b border-gray-700 pb-6 ">
 
-                  <h3 className=" text-xl md:text-3xl font-poppins text-gray-300">Technologies & Frameworks</h3>
+                  <h3 className=" text-xl md:pl-8  md:text-3xl pb-2 font-poppins text-gray-300 border-b border-gray-700 w-fit ">Technologies & Frameworks</h3>
 
-                  <div className=" w-full mt-4 flex gap-1 md:gap-2 flex-wrap">
+                  <div className=" w-full mt-4 md:pl-12 md:pr-8 flex gap-1 md:gap-2 flex-wrap">
                    
                       {TechList.map( (name,index) => (
                         <div key={index}
-                        className=" w-fit  cursor-pointer text-gray-400 font-semibold bg-gradient-to-t from-gray-800
-                         to-black px-2 md:px-4 py-0.5 md:py-1 rounded-full border border-gray-600 transition-all duration-200 hover:text-white "
+                        className=" w-fit  cursor-pointer text-gray-400 font-semibold bg-black px-2 md:px-4 py-0.5 md:py-1 rounded-lg
+                         border border-gray-600 transition-all duration-200 hover:text-white "
                         >{name}</div>
                       ))}
                     

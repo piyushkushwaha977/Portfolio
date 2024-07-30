@@ -50,11 +50,7 @@ const HomePage = () => {
 
            
              {/* MAIN SECTION */}
-            <motion.div
-             initial={{opacity: 0 , y: -100}}
-             animate={{opacity: 1, y: 0}}
-             transition={{duration: 0.2}}
-             className=' relative w-full h-[40rem] mx-auto'>
+            <mdiv className=' relative w-full h-[40rem] mx-auto'>
             
             {/* SPOTLIGHT */}
               <div className=' md:hidden'>
@@ -136,18 +132,14 @@ const HomePage = () => {
           >
           <FaArrowCircleDown className=' mt-24 mb-8 text-gray-100  md:mt-20 lg:mt-40 text-3xl w-fit mx-auto'/>
           </motion.div>
-            </motion.div>
+            </mdiv>
 
 
               {/* PROJECT SECTION */}
             <div  className=' w-full md:mt-[12rem] overflow-x-hidden'>
-              <motion.h2
-               initial={{opacity: 0 , y: 100}}
-               whileInView={{opacity:1 , y: 0}}
-               transition={{duration: 1}}               
-               className=' mx-2 font-poppins font-bold text-xl md:text-3xl lg:text-6xl  max-w-7xl lg:mx-auto py-4 mb-12 
+              <h2 className=' mx-2 font-poppins font-bold text-xl md:text-3xl lg:text-6xl  max-w-7xl lg:mx-auto py-4 mb-12 
                bg-gradient-to-b from-[#868F96] to-[#596164] text-transparent bg-clip-text border-b border-gray-500'
-                >MY WORK | SOME FEATURED PROJECTS</motion.h2>
+                >MY WORK | SOME FEATURED PROJECTS</h2>
 
                 <Link to={"project/studynotion"}><ProjectSection name={"StudyNotion"} description={description} image={myStudyNotionImg} /></Link>
                 <Link to={"project/foodfusion"}><ProjectSection name={"FoodFusion"} description={description} image={foodfusion} /></Link>

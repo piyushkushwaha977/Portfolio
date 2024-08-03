@@ -4,8 +4,10 @@ import { motion } from 'framer-motion'
 
 const FoodFusionPage = () => {
   return (
+   
+     <div className=' bg-black'>
     
-   <div className=' w-full max-w-7xl mx-auto h-full -z-10 bg-black '>
+      <div className=' w-full max-w-7xl mx-auto h-full -z-10 bg-black '>
 
          <motion.div
                 initial={{ opacity: 0 }}
@@ -96,7 +98,8 @@ const FoodFusionPage = () => {
               </motion.div>
   
  
-</div>
+       </div>
+    </div>   
   )
 }
 

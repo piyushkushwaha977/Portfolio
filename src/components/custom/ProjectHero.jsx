@@ -31,20 +31,6 @@ const ProjectHero = () => {
         <Navbar/>
 
         <div className=" relative max-w-full md:max-w-7xl md:mx-auto  ">
-         
-             {/* <div className=" absolute  flex  rounded-sm mt-28   ">
-               <Link to="/"  className=" text-xl font-bold md:text-3xl flex items-center justify-center ml-3 md:ml-12   gap-2  ">
-                  <FaArrowLeft className=" inline md:text-2xl text-white md:mt-2"/>
-                  <div className="  text-gray-400 border-b-2 border-orange-600">
-                    Back</div>
-               </Link>
-              </div>  */}
-
-             {/* <Link to="/"  className=" absolute top-28 pl-6 right-0 text-xl font-bold md:text-3xl flex items-center justify-center md:ml-12   gap-2  ">
-                  <FaArrowLeft className=" inline md:text-2xl text-white md:mt-2"/>
-                  <div className="  text-gray-400 border-b-2 border-orange-600">
-                    Projects</div>
-               </Link>    */}
 
           <div className=" max-w-full mx-1 mt-20 md:max-w-6xl lg:max-w-6xl md:mx-auto ">
             <div className="max-w-[23rem] md:max-w-[50rem] lg:max-w-6xl mx-auto h-[16rem]  md:h-[42rem] w-full aspect-square">
@@ -87,16 +73,13 @@ const ProjectHero = () => {
                    
                       {TechList.map( (name,index) => (
                         <div key={index}
-                        className=" w-fit  cursor-pointer text-gray-400 font-semibold bg-black px-2 md:px-4 py-0.5 md:py-1 rounded-lg
+                        className=" w-fit  cursor-pointer text-gray-400 font-semibold px-2 md:px-4 py-0.5 md:py-1 rounded-lg
                          border border-gray-600 transition-all duration-200 hover:text-white "
                         >{name}</div>
                       ))}
                     
                   </div>
                 </div>
-
-
-              
 
               </div>
            
@@ -111,6 +94,7 @@ const ProjectHero = () => {
             </div>
           </div>
         </div>
+
     </div>
   );
 };

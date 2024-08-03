@@ -136,7 +136,7 @@ const HomePage = () => {
 
 
               {/* PROJECT SECTION */}
-            <div  className=' w-full md:mt-[12rem] overflow-x-hidden'>
+            <div  className=' w-full mt-28 md:mt-[12rem] overflow-x-hidden'>
               <h2 className=' mx-2 font-poppins font-bold text-xl md:text-3xl lg:text-6xl  max-w-7xl lg:mx-auto py-4 mb-12 
                bg-gradient-to-b from-[#868F96] to-[#596164] text-transparent bg-clip-text border-b border-gray-500'
                 >MY WORK | SOME FEATURED PROJECTS</h2>

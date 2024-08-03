@@ -98,12 +98,10 @@ function ContactPage() {
         <h1 className="text-4xl md:text-5xl text-center font-sans font-bold mb-8 text-white">
           Contact Us
         </h1>
-        <p className="text-neutral-500 max-w-lg mx-auto my-2  text-center mb-12">
-          I'm currently looking for new opportunities to work with great people & companies.
-          I'm highly adaptable and always willing to learn new technologies as required by the company.
-          If you think I might be a good fit for your team or you just want to learn more about what I do, 
-          don't hesitate to reach out via email <span className=" text-white">piyushkushwaha977</span> or anywhere you feel comfortable to contact.
-           I am always excited to work on some awesome projects
+        <p className="text-neutral-500 max-w-lg mx-auto my-2  text-center mb-12 font-poppins">
+          I'm currently looking for Opportunities. I'm highly adaptable and always willing to learn new technologies as required by the company.
+          You can reach out me via email <span className=" text-white">piyushkushwaha977  </span> 
+           I am always excited to work on some Awesome projects
         </p>
         <form onSubmit={handleSubmit} className="space-y-8 mt-4 border-gray-700 ">
           <input

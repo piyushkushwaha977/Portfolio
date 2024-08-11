@@ -50,7 +50,7 @@ const HomePage = () => {
 
            
              {/* MAIN SECTION */}
-            <mdiv className=' relative w-full h-[40rem] mx-auto'>
+            <div className=' relative w-full h-[40rem] mx-auto'>
             
             {/* SPOTLIGHT */}
               <div className=' md:hidden'>
@@ -114,9 +114,9 @@ const HomePage = () => {
 
           {/* Button for project */}
             <motion.div
-             initial={{opacity: 0 , x: -50}}
+             initial={{opacity: 0 , x: -100}}
              animate={{opacity:1 , x: 0}}
-             transition={{duration: 1}}
+             transition={{duration: 0.8}}
              className=" w-fit mx-auto flex items-center  gap-3 cursor-pointer text-white font-semibold bg-gradient-to-t from-gray-800
               to-black px-4 py-2 rounded-full border border-gray-600 transition-all duration-200 "
              >
@@ -125,19 +125,23 @@ const HomePage = () => {
                  <FaArrowCircleDown className=' text-xl'/>
             </motion.div>
           
+         <div className=' w-full relative mx-auto'>
           <motion.div 
            initial={{ y: 50}}
            animate={{ y: 0  }}
            transition={{duration: 3, repeat:Infinity}}
+           className=' w-full absolute mx-auto '
           >
-          <FaArrowCircleDown className=' mt-24 mb-8 text-gray-100  md:mt-20 lg:mt-40 text-3xl w-fit mx-auto'/>
+            <FaArrowCircleDown className=' mt-24 mb-8 text-gray-100  md:mt-20 lg:mt-40 text-3xl w-fit mx-auto'/>
           </motion.div>
-            </mdiv>
+        </div>
+
+    </div>
 
 
               {/* PROJECT SECTION */}
-            <div  className=' w-full mt-28 md:mt-[12rem] overflow-x-hidden'>
-              <h2 className=' mx-2 font-poppins font-bold text-xl md:text-3xl lg:text-6xl  max-w-7xl lg:mx-auto py-4 mb-12 
+            <div  className=' w-full mt-16 md:mt-[8rem] overflow-x-hidden'>
+              <h2 className=' mx-2 font-poppins font-bold text-xl md:text-3xl lg:text-6xl  max-w-7xl lg:mx-auto py-4 mb-12 md:mb-20
                bg-gradient-to-b from-[#868F96] to-[#596164] text-transparent bg-clip-text border-b border-gray-500'
                 >MY WORK | SOME FEATURED PROJECTS</h2>
 

@@ -44,7 +44,7 @@ const ProjectsPage = () => {
                        <div className=' flex flex-col '>
                            <div className='w-fit flex gap-1 md:gap-2 items-center justify-center'>
                             <h2 className=' md:pb-3 flex items-center font-semibold text-lg text-gray-300 md:text-2xl border-b-2 border-slate-700'
-                            > <RiDashboardHorizontalFill className='inline mr-0.5  md:mr-1.5 text-purple-700 text-xl md:text-3xl'/>
+                            > <RiDashboardHorizontalFill className='inline mr-0.5 md:mr-1.5 text-purple-700 text-[22px] md:text-3xl'/>
                               MERN  | FULL STACK PROJECTS</h2>
                            </div>
                             <div className=' mx-1 md:mx-4 '>
@@ -53,13 +53,13 @@ const ProjectsPage = () => {
                                 StudyNotion an Edtech Platform (LMS)  <GoArrowRight className='inline ml-2 md:ml-6 left-0 '/>
                                </div>
                               </Link>
-                              <a href='https://truefeedback.in/ '>
-                              {/* <Link to={"/project/foodfusion"}> */}
+                              {/* <a href='https://truefeedback.in/ '> */}
+                              <Link to={"/project/truefeedback"}>
                                <div className=' ml-2 md:ml-10 py-4 md:py-3  text-gray-400 hover:text-white font-poppins md:text-2xl border-b '>
                                 TrueFeedback text Messaging app  <GoArrowRight className='inline ml-2 md:ml-6 left-0 '/>
                                </div>
-                              {/* </Link> */}
-                              </a>
+                              </Link>
+                              {/* </a> */}
                             </div>
                         </div>
 
@@ -67,7 +67,7 @@ const ProjectsPage = () => {
                           <div className=' flex flex-col '>
                            <div className='w-fit flex gap-1 md:gap-2 items-center justify-center'>
                             <h2 className=' md:pb-3 flex items-center font-semibold text-lg text-gray-300 md:text-2xl border-b-2 border-slate-700
-                            '><TbLayoutDashboardFilled className='inline mr-0.5  md:mr-1.5 text-red-700 text-xl md:text-3xl'/>
+                            '><TbLayoutDashboardFilled className='inline mr-0.5  md:mr-1.5 text-red-700 text-[22px] md:text-3xl'/>
                              REACT/NEXT.JS | FRONTEND-PROJECTS</h2>
                            </div>
                             <div className=' mx-1 md:mx-4 '>
@@ -88,7 +88,7 @@ const ProjectsPage = () => {
                          <div className=' flex flex-col '>
                            <div className='w-fit flex gap-1 md:gap-2 items-center justify-center'>
                             <h2 className=' md:pb-3 flex items-center font-semibold text-lg text-gray-300 md:text-2xl border-b-2 border-slate-700
-                            '><MdSpaceDashboard className='inline mr-0.5  md:mr-1.5 text-yellow-700 text-xl md:text-3xl'/>
+                            '><MdSpaceDashboard className='inline mr-0.5  md:mr-1.5 text-yellow-700 text-[22px] md:text-3xl'/>
                              REACT & TAILWIND | UI PROJECTS</h2>
                            </div>
                             <div className=' mx-1 md:mx-4 '>

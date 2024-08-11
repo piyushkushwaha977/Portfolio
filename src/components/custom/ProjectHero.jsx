@@ -1,10 +1,14 @@
 import myStudynotionImg from "../../assets/projectImages/MyStudyNotion.png"
+import myStudynotionProjectImg from "../../assets/projectImages/studynotionproject.png"
 // import { Link } from "react-router-dom";
 // import { FaArrowLeft } from "react-icons/fa6";
 import Navbar from "./Navbar";
 import { GrTechnology } from "react-icons/gr";
 import { RiCheckDoubleFill } from "react-icons/ri";
 import { SiCountingworkspro } from "react-icons/si";
+import { TbExternalLink } from "react-icons/tb";
+// import { FiArrowUpRight } from "react-icons/fi";
+import { FaGithub } from "react-icons/fa6";
 
 
  const TechList = ["React", "nodejs" , "express" , "NextJs" , "Firebase" , "Redux" , "Cloudinary" ,"Appwrite", "nodejs" , "express" , "NextJs" , "Firebase" , "Redux" , "Cloudinary" ,"Appwrite" ]
@@ -26,32 +30,38 @@ import { SiCountingworkspro } from "react-icons/si";
 const ProjectHero = () => {
 
   return (
-    <div className=" w-full top-0 left-0">
-        {/* <div className=" fixed top-0 left-0 h-full w-full -z-10">
-          <div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
-        </div> */}
+    <>
+        {/* Dark Theme Background code */}
         <div className="fixed left-0 top-0 -z-10 w-full h-full">
-                {/* Dark Theme Background code */}
-         <div className="relative h-full w-full bg-black"><div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div><div className="absolute left-0 right-0 top-[-10%] h-[1000px] w-[1000px] rounded-full bg-[radial-gradient(circle_400px_at_50%_300px,#fbfbfb36,#000)]"></div></div>
-
+          <div className="relative h-full w-full bg-black"><div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div><div className="absolute left-0 right-0 top-[-10%] h-[1000px] w-[1000px] rounded-full bg-[radial-gradient(circle_400px_at_50%_300px,#fbfbfb36,#000)]"></div></div>
         </div> 
 
-        <Navbar/>
+        <div className=" relative h-screen w-full max-w-full md:max-w-7xl md:mx-auto  ">
 
-        <div className=" relative max-w-full md:max-w-7xl md:mx-auto  ">
+          <Navbar/>
 
           <div className=" max-w-full mx-1 mt-8 md:max-w-6xl lg:max-w-7xl md:mx-auto ">
             <div className="max-w-[23rem] md:max-w-[50rem] lg:max-w-[1180px] mx-auto h-[16rem] md:h-[36rem] lg:h-[46rem] w-full aspect-square  ">
-              <img src={myStudynotionImg} 
+              <img src={myStudynotionProjectImg} 
                className=" rounded-md w-full h-[15rem] md:h-[32rem] lg:h-[45rem] object-cover border border-[#2b2a28]  shadow-2xl shadow-slate-800"
                alt="studynotion"
               />
             </div>
 
-            <div className=" w-full max-w-[32rem] md:max-w-6xl lg:max-w-7xl mx-auto">
-               <h2 className="mt-4 md:mt-12 pb-4 pl-2 font-bold font-poppins uppercase text-3xl md:text-5xl bg-gradient-to-b from-[#868F96] to-[#596164] text-transparent bg-clip-text 
-                border-b border-slate-700"
-               >Study Notion</h2>
+    <div className=" w-full max-w-[32rem] md:max-w-6xl lg:max-w-7xl mx-auto">
+       <div className=" flex justify-between mt-4 md:mt-12 ">
+       <h2 className=" pb-4 pl-2 font-bold font-poppins uppercase text-3xl md:text-5xl bg-gradient-to-b from-[#868F96] to-[#596164] text-transparent bg-clip-text 
+          border-b border-slate-700" > Study Notion </h2>
+           <div className=" flex flex-col">
+           <div className=" text-gray-400 md:text-2xl flex items-center font-thin"> 
+            <TbExternalLink className="inline text-teal-400 text-2xl  md:text-3xl mr-0.5"/>
+            View the Website </div>
+
+            <div className=" text-gray-400 md:text-2xl flex items-center font-thin"> 
+            <FaGithub className="inline text-gray-400 text-2xl  md:text-3xl mr-0.5"/>
+             My Github </div>
+           </div>
+       </div>
            
         <div className=" max-w-full mx-2 mt-6 flex flex-col-reverse  " >
 
@@ -140,8 +150,8 @@ const ProjectHero = () => {
           </div>
         </div>
 
-    </div>
-  );
-};
+    </>
+  )
+}
 
 export default ProjectHero;

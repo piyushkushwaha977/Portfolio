@@ -25,7 +25,7 @@ const HomePage = () => {
     const HelloMessage = "HI!, IM PIYUSH"
    
   return (
-    <div className='relative w-full '>
+    <>
      
          <div className="fixed left-0 top-0 -z-10 w-full h-full">
                 {/* Dark Theme Background code */}
@@ -37,7 +37,7 @@ const HomePage = () => {
           </div> */}
         </div> 
           
-          <div className=' relative w-full h-full'>
+          <div className=' relative w-full h-screen overflow-x-hidden'>
 
                {/* NAVBAR */}
                    <motion.div 
@@ -230,7 +230,7 @@ const HomePage = () => {
     
     
     
-    </div>
+    </>
   )
 }
 

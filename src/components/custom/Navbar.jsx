@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <div className=' max-w-7xl mt-2 mx-auto bg-transparent '>
+    <div className=' max-w-7xl pt-3 mx-auto bg-transparent '>
        <ul className=' px-12 flex gap-1 md:gap-2 md:py-2  items-center justify-center '>
           {
             NAVITEMS.map( (item,index) => (

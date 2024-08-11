@@ -11,13 +11,13 @@ import { TbLayoutDashboardFilled } from "react-icons/tb";
 const ProjectsPage = () => {
   return (
     <>
-     <div className=' fixed h-full w-full top-0 left-0 -z-10'>
+     <div>
       {/* <div className="absolute top-0 z-[-2] h-screen w-screen  bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div> */}
       <div className="fixed left-0 top-0 -z-10 w-full h-full">
                 {/* Dark Theme Background code */}
          <div className="relative h-full w-full bg-black"><div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div><div className="absolute left-0 right-0 top-[-10%] h-[1000px] w-[1000px] rounded-full bg-[radial-gradient(circle_400px_at_50%_300px,#fbfbfb36,#000)]"></div></div></div> 
   
-        <div className=' w-full h-full overflow-x-hidden '> 
+        <div className=' relative w-full h-screen overflow-x-hidden '> 
           <div className=' '> 
               <Navbar/>
           </div> 
@@ -44,7 +44,7 @@ const ProjectsPage = () => {
                        <div className=' flex flex-col '>
                            <div className='w-fit flex gap-1 md:gap-2 items-center justify-center'>
                             <h2 className=' md:pb-3 flex items-center font-semibold text-lg text-gray-300 md:text-2xl border-b-2 border-slate-700'
-                            > <RiDashboardHorizontalFill className='inline mr-0.5  md:mr-1.5 text-purple-700 md:text-3xl'/>
+                            > <RiDashboardHorizontalFill className='inline mr-0.5  md:mr-1.5 text-purple-700 text-xl md:text-3xl'/>
                               MERN  | FULL STACK PROJECTS</h2>
                            </div>
                             <div className=' mx-1 md:mx-4 '>
@@ -67,7 +67,7 @@ const ProjectsPage = () => {
                           <div className=' flex flex-col '>
                            <div className='w-fit flex gap-1 md:gap-2 items-center justify-center'>
                             <h2 className=' md:pb-3 flex items-center font-semibold text-lg text-gray-300 md:text-2xl border-b-2 border-slate-700
-                            '><TbLayoutDashboardFilled className='inline mr-0.5  md:mr-1.5 text-red-700 md:text-3xl'/>
+                            '><TbLayoutDashboardFilled className='inline mr-0.5  md:mr-1.5 text-red-700 text-xl md:text-3xl'/>
                              REACT/NEXT.JS | FRONTEND-PROJECTS</h2>
                            </div>
                             <div className=' mx-1 md:mx-4 '>
@@ -88,7 +88,7 @@ const ProjectsPage = () => {
                          <div className=' flex flex-col '>
                            <div className='w-fit flex gap-1 md:gap-2 items-center justify-center'>
                             <h2 className=' md:pb-3 flex items-center font-semibold text-lg text-gray-300 md:text-2xl border-b-2 border-slate-700
-                            '><MdSpaceDashboard className='inline mr-0.5  md:mr-1.5 text-yellow-700 md:text-3xl'/>
+                            '><MdSpaceDashboard className='inline mr-0.5  md:mr-1.5 text-yellow-700 text-xl md:text-3xl'/>
                              REACT & TAILWIND | UI PROJECTS</h2>
                            </div>
                             <div className=' mx-1 md:mx-4 '>

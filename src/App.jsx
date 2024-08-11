@@ -9,7 +9,7 @@ import ProjectsPage from "./pages/ProjectsPage";
 
 function App() {
   return (
-    <div className=" relative w-full overflow-x-hidden p-0 m-0 ">
+    <div>
       <>
         {/* <Navbar/> */}
         <Routes >

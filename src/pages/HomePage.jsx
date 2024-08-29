@@ -50,7 +50,7 @@ const HomePage = () => {
 
            
              {/* MAIN SECTION */}
-            <div className=' relative w-full h-[40rem] mx-auto'>
+      <div className=' relative w-full h-[40rem] mx-auto'>
             
             {/* SPOTLIGHT */}
               <div className=' md:hidden'>
@@ -89,7 +89,7 @@ const HomePage = () => {
                  initial={{opacity: 0 , x: -100}}
                  animate={{opacity:1 , x: 0}}
                  transition={{duration: 0.8}}
-                 className='mt-10  mb-4 md:my-8 w-fit mx-auto flex gap-1 md:gap-2 text-black text-3xl border-b pb-2 border-gray-400 '> 
+                 className= 'mt-10  mb-4 md:my-8 w-fit mx-auto flex gap-1 md:gap-2 text-black text-3xl border-b pb-2 border-gray-400 '> 
                   <a  href={Links.twitter}
                   className=' border-r-2 p-2 md:pr-4 text-gray-400'
                   ><FaXTwitter className=' text-gray-100 hover:text-gray-400 ' />
@@ -115,8 +115,8 @@ const HomePage = () => {
           {/* Button for project */}
             <motion.div
              initial={{opacity: 0 , x: -100}}
-             animate={{opacity:1 , x: 0}}
-             transition={{duration: 0.8}}
+                 animate={{opacity:1 , x: 0}}
+                 transition={{duration: 0.4}}
              className=" w-fit mx-auto flex items-center  gap-3 cursor-pointer text-white font-semibold bg-gradient-to-t from-gray-800
               to-black px-4 py-2 rounded-full border border-gray-600 transition-all duration-200 "
              >
@@ -164,7 +164,7 @@ const HomePage = () => {
             className=' flex flex-col  '>
                <div className='w-fit flex gap-1 md:gap-2 items-center justify-center'>
                <TbBrandReact className=' font-bold text-2xl text-blue-300 md:text-4xl'/>
-                <h2 className=' font-semibold text-xl md:text-3xl border-b-2 text-white border-purple-700'>  FRONT-END</h2>
+                <h2 className=' font-semibold text-xl md:text-3xl border-b-2 text-white border-yellow-700'>  FRONT-END</h2>
                </div>
                 <div className=' ml-6 md:ml-20 py-2 md:py-4 lg:py-6  font-poppins  md:text-[22px] lg:text-[27px] text-gray-400 border-b border-slate-600 '>
                     Javascript, React, Redux, Tailwind, Typescript, Nextjs, HTML/CSS
@@ -201,7 +201,7 @@ const HomePage = () => {
               className=' flex flex-col '>
                <div className='w-fit flex gap-1 md:gap-2 items-center justify-center'>
                <GrTechnology className=' font-bold text-2xl md:text-4xl text-orange-600'/>
-                <h2 className=' font-semibold text-xl md:text-3xl text-white border-b-2  border-green-700 uppercase'> 
+                <h2 className=' font-semibold text-xl md:text-3xl text-white border-b-2  border-purple-700 uppercase'> 
                 Tools & Platforms <VscVscodeInsiders className=' text-blue-500 inline font-bold text-2xl md:text-4xl'/></h2>
                </div>
                 <div className=' ml-6 md:ml-20 py-2 md:py-4 lg:py-6  font-poppins text-md md:text-[22px] lg:text-[27px]  text-gray-400 border-b border-slate-600'>

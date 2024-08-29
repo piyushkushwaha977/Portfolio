@@ -7,8 +7,9 @@ import { GrTechnology } from "react-icons/gr";
 import { RiCheckDoubleFill } from "react-icons/ri";
 import { SiCountingworkspro } from "react-icons/si";
 import { TbExternalLink } from "react-icons/tb";
+import { motion } from "framer-motion";
 // import { FiArrowUpRight } from "react-icons/fi";
-import { FaGithub } from "react-icons/fa6";
+// import { FaGithub } from "react-icons/fa6";
 
 
  const TechList = ["React", "nodejs" , "express" , "NextJs" , "Firebase" , "Redux" , "Cloudinary" ,"Appwrite", "nodejs" , "express" , "NextJs" , "Firebase" , "Redux" , "Cloudinary" ,"Appwrite" ]
@@ -38,46 +39,58 @@ const ProjectHero = () => {
 
         <div className=" relative h-screen w-full max-w-full md:max-w-7xl md:mx-auto  ">
 
-          <Navbar/>
+            <Navbar/>
 
-          <div className=" max-w-full mx-1 mt-8 md:max-w-6xl lg:max-w-7xl md:mx-auto ">
-            <div className="max-w-[23rem] md:max-w-[50rem] lg:max-w-[1180px] mx-auto h-[16rem] md:h-[36rem] lg:h-[46rem] w-full aspect-square  ">
-              <img src={myStudynotionProjectImg} 
-               className=" rounded-md w-full h-[15rem] md:h-[32rem] lg:h-[45rem] object-cover border border-[#2b2a28]  shadow-2xl shadow-slate-800"
+          <div className=" max-w-full mx-1 mt-16 md:mt-8 md:max-w-6xl lg:max-w-7xl md:mx-auto ">
+            <motion.div
+                 initial={{opacity: 0 , y: -100}}
+                 animate={{opacity:1 , y: 0}}
+                 transition={{duration: 1.5}}             
+             className="max-w-[23rem] md:max-w-[50rem] lg:max-w-[1180px] mx-auto h-[16rem] md:h-[36rem] lg:h-[46rem] w-full aspect-square  ">
+              <img src={myStudynotionImg} 
+               className=" rounded-xl md:rounded-3xl w-full h-[15rem] md:h-[32rem] lg:h-[45rem] object-cover border border-[#2b2a28]  shadow-2xl shadow-slate-800"
                alt="studynotion"
               />
-            </div>
+            </motion.div>
 
-    <div className=" w-full max-w-[32rem] md:max-w-6xl lg:max-w-7xl mx-auto">
-       <div className=" flex justify-between mt-4 md:mt-12 ">
-       <h2 className=" pb-4 pl-2 font-bold font-poppins uppercase text-3xl md:text-5xl bg-gradient-to-b from-[#868F96] to-[#596164] text-transparent bg-clip-text 
+  <div className=" w-full max-w-[32rem] md:max-w-6xl lg:max-w-7xl mx-auto">
+      <motion.div
+       initial={{opacity: 0 , x: -100}}
+       animate={{opacity:1 , x: 0}}
+       transition={{duration: 1.2}}        
+       className=" flex justify-between mt-4 md:mt-10 ">
+       <h2 className=" pb-2 md:pb-4 pl-2 font-bold font-poppins uppercase text-2xl md:text-5xl bg-gradient-to-b from-[#868F96] to-[#596164] text-transparent bg-clip-text 
           border-b border-slate-700" > Study Notion </h2>
-           <div className=" flex flex-col">
-           <div className=" text-gray-400 md:text-2xl flex items-center font-thin"> 
-            <TbExternalLink className="inline text-teal-400 text-2xl  md:text-3xl mr-0.5"/>
+           <div className="">
+           <div className=" mt-2 text-gray-400 md:text-2xl flex items-center font-thin hover:underline cursor-pointer"> 
+            <TbExternalLink className="inline text-teal-400 text-2xl  md:text-3xl mr-1 "/>
             View the Website </div>
-
+{/* 
             <div className=" text-gray-400 md:text-2xl flex items-center font-thin"> 
             <FaGithub className="inline text-gray-400 text-2xl  md:text-3xl mr-0.5"/>
-             My Github </div>
+             My Github </div> */}
            </div>
-       </div>
+       </motion.div>
            
         <div className=" max-w-full mx-2 mt-6 flex flex-col-reverse  " >
 
                 {/* LEFT SECTION */}
             <div className="w-full pb-10 border-b border-gray-700">
-                 <h3 className="flex items-center text-xl pb-2 md:pl-2 md:pr-8 mt-8  md:text-3xl text-[#E2D1C3] font-poppins border-b border-gray-700 w-fit "
+                 <h3 className="flex items-center text-xl pb-2 md:pl-2 md:pr-8 mt-12  md:text-3xl text-[#E2D1C3] font-poppins border-b border-gray-700 w-fit "
                  ><SiCountingworkspro className=" inline text-purple-600 mr-2"/>
-                 Functionality & Features</h3>
+                   Functionality & Features</h3>
                     <ul className=" max-w-full pt-2 md:pl-12 md:w-11/12 mt-3 mx-auto">
                     {
                       TechFeatures.map((text,index) => (
-                        <li key={index}
+                        <motion.li
+                           initial={{opacity: 0 , x: -100}}
+                           whileInView={{opacity:1 , x: 0}}
+                           transition={{duration: 1.2}}                          
+                         key={index}
                          className="py-0.5 md:py-1 text-gray-400 font-poppins text-sm  md:text-lg ">
                          <RiCheckDoubleFill className=" inline text-white mr-0.5 md:mr-2"/> 
                           {text}
-                        </li>
+                        </motion.li>
                       ))
                     }
      
@@ -87,27 +100,49 @@ const ProjectHero = () => {
                 {/* RIGHT SECTION */}
                 <div className="w-full border-b border-gray-700 pb-6 ">
 
-                  <h3 className=" text-xl md:pl-2  md:text-3xl pb-2 font-poppins text-[#E2D1C3] border-b border-gray-700 w-fit "
+                  <h3 className=" text-xl md:pl-2 mt-6 md:text-3xl pb-2 font-poppins text-[#E2D1C3] border-b border-gray-700 w-fit "
                   > <GrTechnology className=" inline text-red-800 mr-1 md:mr-2"/>
                    Technologies & Frameworks</h3>
 
-                  <div className=" w-full mt-4 md:pl-12 md:pr-8 flex gap-1 md:gap-2 flex-wrap">
+                  <motion.div
+                     initial={{opacity: 0 , x: -100}}
+                     whileInView={{opacity:1 , x: 0}}
+                     transition={{duration: 1.2}} 
+                      className=" w-full md:mt-4 my-6 md:pl-12 md:pr-8 flex gap-1 md:gap-2 flex-wrap">
                    
                       {TechList.map( (name,index) => (
-                        <div key={index}
+                        <div            
+                         key={index}
                         className=" w-fit cursor-pointer text-sm md:text-[16px] text-gray-400 font-semibold px-2 md:px-4 py-0.5 md:py-1 rounded-lg
                          border border-gray-600 transition-all duration-200 hover:text-white "
                         >{name}</div>
                       ))}
                     
-                  </div>
+                  </motion.div>
                 </div>
 
               </div>
 
 
-              <div className=" max-w-full mx-1 mt-8 md:max-w-6xl lg:max-w-7xl md:mx-auto ">
-            <div className="max-w-[23rem] md:max-w-[50rem] lg:max-w-[1180px] mx-auto h-[16rem] md:h-[36rem] lg:h-[46rem] w-full aspect-square  ">
+      <div className=" max-w-full mx-1 mt-8 md:max-w-6xl lg:max-w-7xl md:mx-auto ">
+            <motion.div
+              initial={{opacity: 0 , x: -100}}
+              whileInView={{opacity:1 , x: 0}}
+              transition={{duration: 1.2}}           
+             className="max-w-[23rem] md:max-w-[50rem] lg:max-w-[1180px] mx-auto h-[16rem] md:h-[36rem] lg:h-[46rem] w-full aspect-square  ">
+              <img src={myStudynotionImg} 
+               className=" rounded-md w-full h-[15rem] md:h-[32rem] lg:h-[45rem] object-cover border border-[#2b2a28]  shadow-2xl shadow-slate-800"
+               alt="studynotion"
+              />
+             </motion.div>
+
+             <div className=" my-8  max-w-[23rem] md:max-w-[50rem] lg:max-w-[1180px] mx-auto h-[16rem] md:h-[36rem] lg:h-[46rem] w-full aspect-square  ">
+              <img src={myStudynotionProjectImg} 
+               className=" rounded-md w-full h-[15rem] md:h-[32rem] lg:h-[45rem] object-cover border border-[#2b2a28]  shadow-2xl shadow-slate-800"
+               alt="studynotion"
+              />
+             </div>
+             <div className=" my-8  max-w-[23rem] md:max-w-[50rem] lg:max-w-[1180px] mx-auto h-[16rem] md:h-[36rem] lg:h-[46rem] w-full aspect-square  ">
               <img src={myStudynotionImg} 
                className=" rounded-md w-full h-[15rem] md:h-[32rem] lg:h-[45rem] object-cover border border-[#2b2a28]  shadow-2xl shadow-slate-800"
                alt="studynotion"
@@ -115,20 +150,7 @@ const ProjectHero = () => {
              </div>
 
              <div className=" my-8  max-w-[23rem] md:max-w-[50rem] lg:max-w-[1180px] mx-auto h-[16rem] md:h-[36rem] lg:h-[46rem] w-full aspect-square  ">
-              <img src={myStudynotionImg} 
-               className=" rounded-md w-full h-[15rem] md:h-[32rem] lg:h-[45rem] object-cover border border-[#2b2a28]  shadow-2xl shadow-slate-800"
-               alt="studynotion"
-              />
-             </div>
-             <div className=" my-8  max-w-[23rem] md:max-w-[50rem] lg:max-w-[1180px] mx-auto h-[16rem] md:h-[36rem] lg:h-[46rem] w-full aspect-square  ">
-              <img src={myStudynotionImg} 
-               className=" rounded-md w-full h-[15rem] md:h-[32rem] lg:h-[45rem] object-cover border border-[#2b2a28]  shadow-2xl shadow-slate-800"
-               alt="studynotion"
-              />
-             </div>
-
-             <div className=" my-8  max-w-[23rem] md:max-w-[50rem] lg:max-w-[1180px] mx-auto h-[16rem] md:h-[36rem] lg:h-[46rem] w-full aspect-square  ">
-              <img src={myStudynotionImg} 
+              <img src={myStudynotionProjectImg} 
                className=" rounded-md w-full h-[15rem] md:h-[32rem] lg:h-[45rem] object-cover border border-[#2b2a28]  shadow-2xl shadow-slate-800"
                alt="studynotion"
               />

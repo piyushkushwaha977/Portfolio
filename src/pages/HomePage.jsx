@@ -13,7 +13,8 @@ import { FaXTwitter } from "react-icons/fa6";
 import { BsLinkedin } from "react-icons/bs";
 import { VscGithubInverted } from "react-icons/vsc";
 import { FaInstagram } from "react-icons/fa";
-import { FaArrowCircleDown } from "react-icons/fa";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
+import { IoIosArrowDown } from "react-icons/io";
 import { Spotlight } from '../components/ui/Spotlight';
 import { Links } from '../data/links';
 import { Link } from 'react-router-dom';
@@ -79,10 +80,10 @@ const HomePage = () => {
                  initial={{opacity: 0 , x: -100}}
                  animate={{opacity:1 , x: 0}}
                  transition={{duration: 0.8}}
-                 className=' font-poppins text-center text-gray-400 tracking-wide md:text-2xl md:w-[50rem] px-3 mx-auto'>
+                 className=' font-poppins text-center text-neutral-500 tracking-wide md:text-2xl md:w-[50rem] px-3 mx-auto'>
                 <span className=' underline font-bold text-[#E2D1C3]'>A Full-Stack developer</span> and A Knowledge Acquisition Specialist with a knack for creating Seamless, User-friendly Web applications. Specialize in both 
                 <span className='underline font-bold text-[#E2D1C3]'> Front-end & Back-end Development</span>,
-                 ensuring a cohesive and efficient user experience from start to finish.
+                    ensuring a cohesive and efficient user experience from start to finish.
                 </motion.p> 
 
                 <motion.div
@@ -91,23 +92,23 @@ const HomePage = () => {
                  transition={{duration: 0.8}}
                  className= 'mt-10  mb-4 md:my-8 w-fit mx-auto flex gap-1 md:gap-2 text-black text-3xl border-b pb-2 border-gray-400 '> 
                   <a  href={Links.twitter}
-                  className=' border-r-2 p-2 md:pr-4 text-gray-400'
-                  ><FaXTwitter className=' text-gray-100 hover:text-gray-400 ' />
+                  className=' border-r-2 p-2 md:pr-4 text-gray-400 group'
+                  ><FaXTwitter className=' text-gray-100  group-hover:text-neutral-600  group-hover:scale-125 transition-all duration-300' />
                   </a> 
 
                   <a  href={Links.linkedin}
-                  className=' border-r-2 p-2 md:pr-4 border-white'
-                  ><BsLinkedin className=' text-gray-100 hover:text-gray-400  '/>
+                  className=' border-r-2 p-2 md:pr-4 border-white group'
+                  ><BsLinkedin className=' text-gray-100 group-hover:text-blue-600  group-hover:scale-125 transition-all duration-300 '/>
                   </a> 
 
                   <a  href={Links.github}
-                  className=' border-r-2 p-2 md:pr-4 text-gray-400'
-                  ><VscGithubInverted className='text-gray-100 hover:text-gray-400'/>
+                  className=' border-r-2 p-2 md:pr-4 text-gray-400 group'
+                  ><VscGithubInverted className='text-gray-100 group-hover:text-neutral-600  group-hover:scale-125 transition-all duration-300'/>
                   </a> 
 
                   <a  href={Links.instagram}
-                  className=' p-2 '
-                  ><FaInstagram className='text-gray-100 hover:text-gray-400'/>
+                  className=' p-2 group'
+                  ><FaInstagram className='text-gray-100 group-hover:text-pink-600  group-hover:scale-125 transition-all duration-300'/>
                   </a> 
                
                 </motion.div>
@@ -117,24 +118,24 @@ const HomePage = () => {
              initial={{opacity: 0 , x: -100}}
                  animate={{opacity:1 , x: 0}}
                  transition={{duration: 0.4}}
-             className=" w-fit mx-auto flex items-center  gap-3 cursor-pointer text-white font-semibold bg-gradient-to-t from-gray-800
+             className=" w-fit mx-auto flex items-center  gap-3 cursor-pointer text-white font-semibold bg-gradient-to-t from-neutral-800
               to-black px-4 py-2 rounded-full border border-gray-600 transition-all duration-200 "
              >
-              <Link to={"/projects"} >
+              <Link to={"/projects"} className=' text-neutral-400' >
                 See my Projects</Link>
-                 <FaArrowCircleDown className=' text-xl'/>
+                 <IoIosArrowDown className=' text-xl'/>
             </motion.div>
           
-         <div className=' w-full relative mx-auto'>
-          <motion.div 
+         <motion.div
            initial={{ y: 50}}
            animate={{ y: 0  }}
-           transition={{duration: 3, repeat:Infinity}}
-           className=' w-full absolute mx-auto '
-          >
-            <FaArrowCircleDown className=' mt-24 mb-8 text-gray-100  md:mt-20 lg:mt-40 text-3xl w-fit mx-auto'/>
-          </motion.div>
-        </div>
+           transition={{duration: 3, repeat:Infinity}}         
+           className=' w-full relative mx-auto '>
+          <div
+           className=' w-full absolute mx-auto  '>
+            <MdKeyboardDoubleArrowDown className=' mt-24 mb-8 text-gray-100  md:mt-20 lg:mt-40 text-4xl w-fit mx-auto shadow-xl shadow-neutral-500 rounded-full p-1.5'/>
+          </div>
+        </motion.div>
 
     </div>
 
@@ -142,7 +143,7 @@ const HomePage = () => {
               {/* PROJECT SECTION */}
             <div  className=' w-full mt-16 md:mt-[8rem] overflow-x-hidden'>
               <h2 className=' mx-2 font-poppins font-bold text-xl md:text-3xl lg:text-6xl  max-w-7xl lg:mx-auto py-4 mb-12 md:mb-20
-               bg-gradient-to-b from-[#868F96] to-[#596164] text-transparent bg-clip-text border-b border-gray-500'
+               bg-gradient-to-b from-slate-100 to-gray-500 text-transparent bg-clip-text border-b border-gray-500'
                 >MY WORK | SOME FEATURED PROJECTS</h2>
 
                 <Link to={"project/studynotion"}><ProjectSection name={"StudyNotion"} description={description} image={myStudyNotionImg} /></Link>
@@ -153,7 +154,8 @@ const HomePage = () => {
                 {/* SKILLS SECTION */}
         <div className=' w-full max-w-7xl  mx-auto mt-16 md:mt-[6rem]  '>
          <div className=' w-full md:max-w-5xl mx-auto'>
-           <h2 className=' mb-20 font-bold text-3xl md:text-5xl text-center text-gray-200'> MY SKILLS</h2>
+           <h2 className=' mb-20 font-bold text-3xl md:text-5xl text-center bg-gradient-to-b from-slate-100 to-gray-500 text-transparent bg-clip-text
+           '> MY SKILLS</h2>
         {/* SKILLS CATEGORIES */}
           <div className=' flex flex-col gap-12 md:gap-16 mx-2'>
            {/* FRONTEND SKILLS */}

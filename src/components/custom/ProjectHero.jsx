@@ -34,18 +34,19 @@ const ProjectHero = () => {
     <>
         {/* Dark Theme Background code */}
         <div className="fixed left-0 top-0 -z-10 w-full h-full">
-          <div className="relative h-full w-full bg-black"><div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div><div className="absolute left-0 right-0 top-[-10%] h-[1000px] w-[1000px] rounded-full bg-[radial-gradient(circle_400px_at_50%_300px,#fbfbfb36,#000)]"></div></div>
+          <div className="relative h-full w-full bg-black">
+          <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div><div className="absolute left-0 right-0 top-[-10%] h-[1000px] w-[1000px] rounded-full bg-[radial-gradient(circle_400px_at_50%_300px,#fbfbfb36,#000)]"></div></div>
         </div> 
 
-        <div className=" relative h-screen w-full max-w-full md:max-w-7xl md:mx-auto  ">
+        <div className=" relative h-screen w-full md:max-w-7xl md:mx-auto  ">
 
             <Navbar/>
 
           <div className=" max-w-full mx-1 mt-16 md:mt-8 md:max-w-6xl lg:max-w-7xl md:mx-auto ">
             <motion.div
-                 initial={{opacity: 0 , y: -100}}
-                 animate={{opacity:1 , y: 0}}
-                 transition={{duration: 1.5}}             
+                 initial={{opacity: 0 , scale: 0.5}}
+                 animate={{opacity:1 , scale: 1}}
+                 transition={{duration: 0.7}}             
              className="max-w-[23rem] md:max-w-[50rem] lg:max-w-[1180px] mx-auto h-[16rem] md:h-[36rem] lg:h-[46rem] w-full aspect-square  ">
               <img src={myStudynotionImg} 
                className=" rounded-xl md:rounded-3xl w-full h-[15rem] md:h-[32rem] lg:h-[45rem] object-cover border border-[#2b2a28]  shadow-2xl shadow-slate-800"
@@ -61,15 +62,15 @@ const ProjectHero = () => {
        className=" flex justify-between mt-4 md:mt-10 ">
        <h2 className=" pb-2 md:pb-4 pl-2 font-bold font-poppins uppercase text-2xl md:text-5xl bg-gradient-to-b from-[#868F96] to-[#596164] text-transparent bg-clip-text 
           border-b border-slate-700" > Study Notion </h2>
-           <div className="">
-           <div className=" mt-2 text-gray-400 md:text-2xl flex items-center font-thin hover:underline cursor-pointer"> 
-            <TbExternalLink className="inline text-teal-400 text-2xl  md:text-3xl mr-1 "/>
+           <>
+           <div className="group rounded-md md:rounded-xl px-2 md:px-4 border border-neutral-800 mt-2 text-gray-400 md:text-2xl flex items-center font-thin hover:underline cursor-pointer"> 
+            <TbExternalLink className="inline text-teal-400 text-2xl  md:text-3xl mr-1 group-hover:scale-110 transition-all duration-300 "/>
             View the Website </div>
 {/* 
             <div className=" text-gray-400 md:text-2xl flex items-center font-thin"> 
             <FaGithub className="inline text-gray-400 text-2xl  md:text-3xl mr-0.5"/>
              My Github </div> */}
-           </div>
+           </>
        </motion.div>
            
         <div className=" max-w-full mx-2 mt-6 flex flex-col-reverse  " >

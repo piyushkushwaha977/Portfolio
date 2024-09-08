@@ -14,7 +14,7 @@ const Navbar = () => {
                  className='py-2 text-white font-semibold text-md  md:text-xl cursor-pointer group '>
                    <li 
                    className=' flex items-center '>
-                      <span className=' pr-1 border-transparent border-b-2 group-hover:border-purple-950  uppercase'>
+                      <span className=' pr-1 border-transparent border-b-[3px] group-hover:border-purple-950  uppercase'>
                         {item.title}
                       </span>
                       {item.title === "Contact" ? "" : (<span className=' mb-1'>/</span>)}

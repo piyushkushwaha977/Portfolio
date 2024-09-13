@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { GoArrowRight } from "react-icons/go";
-import { FaArrowLeft } from 'react-icons/fa6';
+// import { FaArrowLeft } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
 import Navbar from '../components/custom/Navbar';
 import { RiDashboardHorizontalFill } from "react-icons/ri";
@@ -22,17 +22,17 @@ const ProjectsPage = () => {
               <Navbar/>
           </div> 
                 {/* BACK ARROW  */}
-             <div className="  flex  w-fit rounded-sm mt-8  lg:ml-28  ">
+             {/* <div className="  flex  w-fit rounded-sm mt-8  lg:ml-28  ">
                <Link to="/"  className=" text-xl font-bold md:text-3xl flex items-center justify-center ml-3 md:ml-28   gap-2  ">
                   <FaArrowLeft className=" inline md:text-2xl text-white md:mt-2"/>
                   <div className="  text-gray-100 border-b-2 border-orange-600">
                     Back</div>
                </Link>
-              </div>            
+              </div>             */}
                         {/* SKILLS SECTION */}
             <div className=' w-full mx-auto mb-36  '>
                   <div className=' w-full md:max-w-4xl lg:max-w-5xl mx-auto'>
-                     <h2 className=' mb-12 mt-4  w-fit mx-auto font-bold text-3xl md:text-4xl text-center bg-gradient-to-b from-slate-100 to-gray-500 text-transparent bg-clip-text border-b-2  '
+                     <h2 className=' mb-12 mt-8 md:mt-12  w-fit mx-auto font-bold text-3xl md:text-4xl text-center bg-gradient-to-b from-slate-100 to-gray-500 text-transparent bg-clip-text border-b-2  '
                      > MY PROJECTS</h2>
                     {/* SKILLS CATEGORIES */}
                       <motion.div 
@@ -42,9 +42,9 @@ const ProjectsPage = () => {
                       className=' flex flex-col gap-12  md:max-w-2xl mx-2 md:mx-auto'>
                        {/* FULL STACK PROJECTS */}
                        <div className=' flex flex-col '>
-                           <div className='w-fit flex gap-1 md:gap-2 items-center justify-center'>
-                            <h2 className=' md:pb-3 flex items-center justify-center font-semibold text-lg text-gray-300 md:text-2xl border-b-2 border-slate-700'
-                            > <RiDashboardHorizontalFill className='inline mr-0.5 md:mr-1.5 text-purple-700 text-[22px] md:text-3xl'/>
+                           <div className='w-fit flex items-center justify-center pb-2 md:pb-3 border-b-2 border-neutral-700'>
+                           <RiDashboardHorizontalFill className='flex-nowrap mr-0.5 md:mr-1.5 text-purple-700 text-[22px] md:text-3xl'/>
+                            <h2 className='font-semibold text-lg text-gray-300 md:text-2xl '> 
                               MERN  | FULL STACK PROJECTS</h2>
                            </div>
                             <div className=' mx-1 md:mx-4  '>
@@ -65,9 +65,9 @@ const ProjectsPage = () => {
 
                           {/* FRONTEND PROJECTS */}
                           <div className=' flex flex-col '>
-                           <div className='w-fit flex gap-1 md:gap-2 items-center justify-center'>
-                            <h2 className=' md:pb-3 flex items-center justify-center font-semibold text-lg text-gray-300 md:text-2xl border-b-2 border-slate-700
-                            '><TbLayoutDashboardFilled className='inline mr-0.5  md:mr-1.5 text-red-700 text-[22px] md:text-3xl'/>
+                           <div className='w-fit flex items-center justify-center pb-2 md:pb-3 border-b-2 border-neutral-700'>
+                           <TbLayoutDashboardFilled className=' flex-nowrap mr-0.5  md:mr-1.5 text-teal-500 text-[22px] md:text-3xl'/>
+                            <h2 className=' font-semibold text-lg text-gray-300 md:text-2xl '>
                              REACT/NEXT.JS | FRONTEND-PROJECTS</h2>
                            </div>
                             <div className=' mx-1 md:mx-4 '>
@@ -86,9 +86,9 @@ const ProjectsPage = () => {
 
                          {/* Tools and Platforms TECH */}
                          <div className=' flex flex-col '>
-                           <div className='w-fit flex gap-1 md:gap-2 items-center justify-center'>
-                            <h2 className=' md:pb-3 flex items-center justify-center font-semibold text-lg text-gray-300 md:text-2xl border-b-2 border-slate-700
-                            '><MdSpaceDashboard className='inline mr-0.5  md:mr-1.5 text-yellow-700 text-[22px] md:text-3xl'/>
+                           <div className='w-fit flex items-center justify-center pb-2 md:pb-3 border-b-2 border-neutral-700 mb-2'>
+                           <MdSpaceDashboard className=' flex-nowrap mr-0.5  md:mr-1.5 text-red-700 text-[22px] md:text-3xl'/>
+                            <h2 className='  font-semibold text-lg text-gray-300 md:text-2xl '>
                              REACT & TAILWIND | UI PROJECTS</h2>
                            </div>
                             <div className=' mx-1 md:mx-4 '>

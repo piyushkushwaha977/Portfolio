@@ -19,7 +19,7 @@ import { Spotlight } from '../components/ui/Spotlight';
 import { Links } from '../data/links';
 import { Link } from 'react-router-dom';
 
-const description = "Our team works with our clients to refine an idea and concept into an executable design. We create a final design that encompasses the brand narrative to bring stories to life and provide end-to-end design solutions from concept, design, and architectural drawings to 3D renderings."
+const description = "Our team works with our clients to refine an idea and concept into an executable design. We create a final design that encompasses the brand narrative to bring stories to life and provide great design solutions from concept, design, drawings to 3D renderings."
 
 const HomePage = () => {
  
@@ -114,17 +114,18 @@ const HomePage = () => {
                 </motion.div>
 
           {/* Button for project */}
-            <motion.div
-             initial={{opacity: 0 , x: -100}}
+             <motion.div
+                 initial={{opacity: 0 , x: -100}}
                  animate={{opacity:1 , x: 0}}
-                 transition={{duration: 0.4}}
-             className=" w-fit mx-auto flex items-center  gap-3 cursor-pointer text-white font-semibold bg-gradient-to-t from-neutral-800
+                 transition={{duration: 0.8}} >
+           <div className=" w-fit mx-auto flex items-center  gap-3 cursor-pointer text-white font-semibold bg-gradient-to-t from-neutral-800
               to-black px-4 py-2 rounded-full border border-gray-600 transition-all duration-200 "
              >
               <Link to={"/projects"} className=' text-neutral-400' >
                 See my Projects</Link>
                  <IoIosArrowDown className=' text-xl'/>
-            </motion.div>
+            </div>            
+          </motion.div>
           
          <motion.div
            initial={{ y: 50}}
@@ -163,16 +164,16 @@ const HomePage = () => {
              whileInView={{opacity: 1 , x:0}}
              initial={{opacity:0 , x:100}}
              transition={{duration: 1.5}}
-            className=' flex flex-col  '>
-               <div className='w-fit flex gap-1 md:gap-2 items-center justify-center'>
+             className=' flex flex-col  '>
+               <div className='w-fit flex gap-1 md:gap-2 items-center justify-center text-gray-400'>
                <TbBrandReact className=' font-bold text-2xl text-blue-300 md:text-4xl'/>
-                <h2 className=' font-semibold text-xl md:text-3xl border-b-2 text-white border-yellow-700'>  FRONT-END</h2>
+                <h2 className=' font-semibold text-xl md:text-3xl border-b-2 text-white border-red-600'>  FRONT-END</h2>
                </div>
                 <div className=' ml-6 md:ml-20 py-2 md:py-4 lg:py-6  font-poppins  md:text-[22px] lg:text-[27px] text-gray-400 border-b border-slate-600 '>
-                    Javascript, React, Redux, Tailwind, Typescript, Nextjs, HTML/CSS
+                    Javascript,Typescript, Nextjs, React, Redux, Tailwind, HTML/CSS
                 </div>
-                {/*  We can Add more skills in future
-                <div className=' ml-6 md:ml-20  md:py-6 font-poppins text-md md:text-[22px] lg:text-[27px] border-b border-black'>
+                 {/* We can Add more skills in future */}
+                {/* <div className=' ml-6 md:ml-20  md:py-6 font-poppins text-md md:text-[22px] lg:text-[27px] text-gray-400 border-b border-black'>
                     Javscript, React, Redux, Tailwind, Typescript, Nextjs, HTML/CSS, Redux
                 </div> */}
               
@@ -185,8 +186,8 @@ const HomePage = () => {
              transition={{duration: 1.5 }}
                className=' flex flex-col '>
                <div className='w-fit flex gap-1 md:gap-2 items-center justify-center'>
-                 <FaCode className='font-bold text-teal-800 text-2xl md:text-4xl'/>
-                <h2 className=' font-semibold text-xl text-white md:text-3xl border-b-2 border-orange-700'> 
+                 <FaCode className='font-bold text-teal-300 text-2xl md:text-4xl'/>
+                <h2 className=' font-semibold text-xl text-white md:text-3xl border-b-2 border-neutral-300'> 
                  BACKEND-END</h2>
                </div>
                 <div className='ml-6 md:ml-20 py-2 md:py-4 lg:py-6  font-poppins text-md md:text-[22px] lg:text-[27px] text-gray-400 border-b border-slate-600'>

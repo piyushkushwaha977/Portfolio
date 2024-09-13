@@ -46,7 +46,7 @@ const ProjectHero = () => {
             <motion.div
                  initial={{opacity: 0 , scale: 0.5}}
                  animate={{opacity:1 , scale: 1}}
-                 transition={{duration: 0.7}}             
+                 transition={{duration: 0.5}}             
              className="max-w-[23rem] md:max-w-[50rem] lg:max-w-[1180px] mx-auto h-[16rem] md:h-[36rem] lg:h-[46rem] w-full aspect-square  ">
               <img src={myStudynotionImg} 
                className=" rounded-xl md:rounded-3xl w-full h-[15rem] md:h-[32rem] lg:h-[45rem] object-cover border border-[#2b2a28]  shadow-2xl shadow-slate-800"
@@ -58,7 +58,7 @@ const ProjectHero = () => {
       <motion.div
        initial={{opacity: 0 , x: -100}}
        animate={{opacity:1 , x: 0}}
-       transition={{duration: 1.2}}        
+       transition={{duration: 0.8}}        
        className=" flex justify-between mt-4 md:mt-10 ">
        <h2 className=" pb-2 md:pb-4 pl-2 font-bold font-poppins uppercase text-2xl md:text-5xl bg-gradient-to-b from-[#868F96] to-[#596164] text-transparent bg-clip-text 
           border-b border-slate-700" > Study Notion </h2>
@@ -86,7 +86,7 @@ const ProjectHero = () => {
                         <motion.li
                            initial={{opacity: 0 , x: -100}}
                            whileInView={{opacity:1 , x: 0}}
-                           transition={{duration: 1.2}}                          
+                           transition={{duration: 1}}                          
                          key={index}
                          className="py-0.5 md:py-1 text-gray-400 font-poppins text-sm  md:text-lg ">
                          <RiCheckDoubleFill className=" inline text-white mr-0.5 md:mr-2"/> 

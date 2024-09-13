@@ -63,7 +63,7 @@ const ProjectHero = () => {
        <h2 className=" pb-2 md:pb-4 pl-2 font-bold font-poppins uppercase text-2xl md:text-5xl bg-gradient-to-b from-[#868F96] to-[#596164] text-transparent bg-clip-text 
           border-b border-slate-700" > Study Notion </h2>
            <>
-           <div className="group rounded-md md:rounded-xl px-2 md:px-4 border border-neutral-800 mt-2 text-gray-400 md:text-2xl flex items-center font-thin hover:underline cursor-pointer"> 
+           <div className=" group bg-neutral-950 rounded-md md:rounded-xl px-2 md:px-4 border border-neutral-800 mt-2 text-gray-400 md:text-2xl flex items-center font-thin hover:underline cursor-pointer"> 
             <TbExternalLink className="inline text-teal-400 text-2xl  md:text-3xl mr-1 group-hover:scale-110 transition-all duration-300 "/>
             View the Website </div>
 {/* 
@@ -115,7 +115,7 @@ const ProjectHero = () => {
                         <div            
                          key={index}
                         className=" w-fit cursor-pointer text-sm md:text-[16px] text-gray-400 font-semibold px-2 md:px-4 py-0.5 md:py-1 rounded-lg
-                         border border-gray-600 transition-all duration-200 hover:text-white "
+                         transition-all duration-200 hover:text-white bg-neutral-900"
                         >{name}</div>
                       ))}
                     

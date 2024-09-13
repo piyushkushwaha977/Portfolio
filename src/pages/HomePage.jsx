@@ -19,7 +19,7 @@ import { Spotlight } from '../components/ui/Spotlight';
 import { Links } from '../data/links';
 import { Link } from 'react-router-dom';
 
-const description = "Our team works with our clients to refine an idea and concept into an executable design. We create a final design that encompasses the brand narrative to bring stories to life and provide great design solutions from concept, design, drawings to 3D renderings."
+const description = "Our team works with our clients to refine an idea and concept into an executable design. We create a final design the brand narrative to bring stories to life and provide great design solutions from concept, design, drawings to 3D renderings."
 
 const HomePage = () => {
  

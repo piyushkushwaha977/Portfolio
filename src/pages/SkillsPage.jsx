@@ -9,13 +9,14 @@ import { motion } from "framer-motion";
 
 const SkillsPage = () => {
   return (
-          <div className=" fixed h-full w-full top-0 left-0 -z-10">
+    <div>
+          <div className=" fixed h-screen w-full top-0 left-0 -z-10">
               <div className="absolute top-0 z-[-2] h-screen w-screen  bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
                   {/* SKILLS SECTION */}
                   
                   <Navbar/>
                   
-            <div className=' w-full max-w-7xl  mx-auto mt-16 md:mt-[6rem]  h-screen overflow-y-scroll '>
+            <div className=' relative w-full h-screen  mx-auto mt-16 md:mt-[6rem] overflow-x-hidden '>
 
             {/* <div className=" flex  w-fit rounded-sm py-2 mb-6  ">
                <Link to="/"   className=" text-xl text-white font-bold md:text-3xl flex items-center justify-center ml-3 md:36  gap-2  ">
@@ -86,9 +87,10 @@ const SkillsPage = () => {
                           
                       </div>
                   </div>
-
+             
               </div>
              
+    </div>
     </div>
   )
 }

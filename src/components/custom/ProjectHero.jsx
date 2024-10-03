@@ -43,16 +43,12 @@ const ProjectHero = () => {
             <Navbar/>
 
           <div className=" max-w-full mx-1 mt-16 md:mt-8 md:max-w-6xl lg:max-w-7xl md:mx-auto ">
-            <motion.div
-                 initial={{opacity: 0 , scale: 0.5}}
-                 animate={{opacity:1 , scale: 1}}
-                 transition={{duration: 0.5}}             
-             className="max-w-[23rem] md:max-w-[50rem] lg:max-w-[1180px] mx-auto h-[16rem] md:h-[36rem] lg:h-[46rem] w-full aspect-square  ">
+            <div className="max-w-[23rem] md:max-w-[50rem] lg:max-w-[1180px] mx-auto h-[16rem] md:h-[36rem] lg:h-[46rem] w-full aspect-square  ">
               <img src={myStudynotionImg} 
                className=" rounded-xl md:rounded-3xl w-full h-[15rem] md:h-[32rem] lg:h-[45rem] object-cover border border-[#2b2a28]  shadow-2xl shadow-slate-800"
                alt="studynotion"
               />
-            </motion.div>
+            </div>
 
   <div className=" w-full max-w-[32rem] md:max-w-6xl lg:max-w-7xl mx-auto">
       <motion.div
